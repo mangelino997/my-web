@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+p {
+  border-right: solid 5px rgba(255,255,255,.75);
+  white-space: nowrap;
+  overflow: hidden;    
+  font-family: 'Source Code Pro', monospace;  
+  font-size: 28px;
+  color: rgba(255,255,255,.70);
+}
+
+/* Animation */
+p {
+  animation: animated-text 5s linear 2s 1,
+             animated-cursor 600ms linear infinite;
+    text-align: center;
+}
+
+/* text animation */
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 456px;}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+/* define el estilo del avatar */
+.avatar {
+    border-radius: 100%;
+    margin: 0 0 1em 0;
+    padding: 0.5em;
+    border: solid 1px rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 255, 255, 0.075);
+   /* width: 10em; */
+    -webkit-box-shadow: 0px 9px 36px -11px rgba(0,0,0,0.72);
+-moz-box-shadow: 0px 9px 36px -11px rgba(0,0,0,0.72);
+box-shadow: 0px 9px 36px -11px rgba(0,0,0,0.72);
+}
